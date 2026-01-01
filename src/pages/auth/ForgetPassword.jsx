@@ -37,8 +37,7 @@ export default function ForgetPassword() {
         email: "",
       });
 
-      navigate("/update-password");
-      toast.success("Email Confirm, Please Change the password");
+      toast.success("Check your email");
     } catch (error) {
       toast.error(error.message);
     }
