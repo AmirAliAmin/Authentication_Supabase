@@ -27,7 +27,7 @@ export default function ForgetPassword() {
         return;
       }
       const { error } = await supabase.auth.resetPasswordForEmail(formField.email,{
-        redirectTo:process.env.REACT_APP_URL
+        redirectTo: import.meta.env.VITE_URL
       });
       if (error) {
         throw error;
